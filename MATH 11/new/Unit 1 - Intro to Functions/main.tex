@@ -1,0 +1,309 @@
+
+
+\documentclass{article}
+
+\usepackage{multicol}
+\setlength{\columnsep}{1.2cm}
+\usepackage{pgfplots}
+\pgfplotsset{compat = newest}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsfonts}
+
+
+\title{Intro to Functions}
+\author{Anna Denisova}
+\date{2023}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+%----------------------------------------------------------
+
+\newpage
+\section{Function Definitions}
+
+%----------------------------------------------------------
+
+\newpage
+\section{Function Notation}
+
+%----------------------------------------------------------
+
+\newpage
+\section{Parent Functions}
+
+    \begin{multicols}{2}
+    \noindent
+    \textbf{Quadratic Function}\\
+    $y = x^{2}$\\
+    Key Points = \{(-2,4), (-1,1), (0,0), (1,1), (2,4)\}\\
+    Domain = \{$\mathbb{R}$\} \\
+    Range = \{$y \epsilon  \mathbb{R} | y \geq 0$\} \\\\
+
+    \begin{tikzpicture}
+        \begin{axis}[scale = 0.3, axis lines = center, xmin=-3, xmax=3, ymin=-3, ymax=3]
+            \addplot[blue,smooth, thick] {x^2};
+        \end{axis}
+    \end{tikzpicture}\\
+
+    \noindent
+    \textbf{Root Function}\\
+    $y = \sqrt{x}$\\
+    Key Points = \{(0,0), (1,1), (4,2), (9,3)\}\\
+    Domain = \{$x\epsilon \mathbb{R} | x \geq 0$\} \\
+    Range = \{$y \epsilon  \mathbb{R} | y \geq 0$\} \\
+    
+    \begin{tikzpicture}
+        \begin{axis}[ axis lines = center, xmin=-3, xmax=3, ymin=-3, ymax=3, scale = 0.3, samples=100]
+            \addplot[blue, smooth, thick, unbounded coords = jump] {sqrt(x)};
+        \end{axis}
+    \end{tikzpicture}\\
+
+    \noindent
+    \textbf{Cubic Function}\\
+    $y = x^{3}$\\
+    Key Points = \{(-2,-8), (-1,-1), (0,0), (1,1), (2,8)\}\\
+    Domain = \{$\mathbb{R}$\} \\
+    Range = \{$\mathbb{R}$\} \\
+
+    \begin{tikzpicture}
+        \begin{axis}[ axis lines = center, xmin=-3, xmax=3, ymin=-3, ymax=3, scale = 0.3, samples=100]
+            \addplot[blue, smooth, thick, unbounded coords = jump] {x^3};
+        \end{axis}
+    \end{tikzpicture}\\
+
+    \noindent
+    \textbf{Absolute Value Function}\\
+    $y = |x|$\\
+    Key Points = \{(-2,2), (-1,1), (0,0), (1,1), (2,2)\}\\
+    Domain = \{$\mathbb{R}$\} \\
+    Range = \{$y \epsilon  \mathbb{R} | y \geq 0$\} \\
+
+    \begin{tikzpicture}
+        \begin{axis}[ axis lines = center, xmin=-3, xmax=3, ymin=-3, ymax=3, scale = 0.3, samples=100]
+            \addplot[blue, smooth, thick, unbounded coords = jump] {abs(x)};
+        \end{axis}
+    \end{tikzpicture}\\
+
+    \noindent
+    \textbf{Reciprocal Function}\\
+    $y = \frac{1}{x}$\\
+    Key Points = \{(-2,-$\frac{1}{2}$), (-1,-1), (-$\frac{1}{2}$,-2), ($\frac{1}{2}$,2), (1,1), (2,$\frac{1}{2}$)\}\\
+    Domain = \{ $x \epsilon \mathbb{R} | x \neq 0$\} \\
+    Range = \{ $y \epsilon \mathbb{R} | y \neq 0$\} \\
+
+    \begin{tikzpicture}
+        \begin{axis}[ axis lines = center, xmin=-3, xmax=3, ymin=-3, ymax=3, scale = 0.3, samples=100]
+            \addplot[blue, smooth, thick, unbounded coords = jump] {1/x};
+        \end{axis}
+    \end{tikzpicture}\\
+
+    \noindent
+    \textbf{Exponential Function}\\
+    $y = 2^{x}$\\
+    Key Points = \{(-2, 1/4), (-1, 1/2), (0,1), (1,2), (2,4)\}\\
+    Domain = \{$\mathbb{R}$\} \\
+    Range = \{ $y \epsilon \mathbb{R} | y > 0$\} \\
+
+    \begin{tikzpicture}
+        \begin{axis}[ axis lines = center, xmin=-3, xmax=3, ymin=-3, ymax=3, scale = 0.3, samples=100]
+            \addplot[blue, smooth, thick, unbounded coords = jump] {2^x};
+        \end{axis}
+    \end{tikzpicture}\\
+
+    \end{multicols}
+
+%----------------------------------------------------------
+
+\newpage
+\section{Domain and Range}
+
+%----------------------------------------------------------
+
+\newpage
+\section{The Inverse Function}
+
+%----------------------------------------------------------
+
+\newpage
+\section{Transformations}
+
+    \[ y = af(k(x-d))+c \]
+
+    \noindent
+    Where:
+    \begin{itemize}
+        \item a and c affect the y-coordinate
+        \item k and d affect the x-coordinate
+    \end{itemize}
+
+    \subsubsection*{Functions}
+
+        \begin{multicols}{2}
+        \noindent
+        Quadratic Function\\
+        $y = x^{2}$\\
+        $y = a(k(x-d))^{2}+c$\\\\
+        \begin{tikzpicture}
+            \begin{axis}[scale = 0.3, axis lines = center, xmin=-3, xmax=3, ymin=-3, ymax=3]
+                \addplot[blue,smooth, thick] {x^2};
+            \end{axis}
+        \end{tikzpicture}\\
+
+        \noindent
+        Root Function\\
+        $y = \sqrt{x}$\\
+        $y = a\sqrt{k(x-d)}+c$\\\\
+        \begin{tikzpicture}
+            \begin{axis}[ axis lines = center, xmin=-3, xmax=3, ymin=-3, ymax=3, scale = 0.3, samples=100]
+                \addplot[blue, smooth, thick, unbounded coords = jump] {sqrt(x)};
+            \end{axis}
+        \end{tikzpicture}\\
+
+        \noindent
+        Cubic Function\\
+        $y = x^{3}$\\
+        $y = a(k(x-d))^{3}+c$\\\\
+        \begin{tikzpicture}
+            \begin{axis}[ axis lines = center, xmin=-3, xmax=3, ymin=-3, ymax=3, scale = 0.3, samples=100]
+                \addplot[blue, smooth, thick, unbounded coords = jump] {x^3};
+            \end{axis}
+        \end{tikzpicture}\\
+
+        \noindent
+        Absolute Value Function\\
+        $y = |x|$\\
+        $y = a|k(x-d)|+c$\\\\
+        \begin{tikzpicture}
+            \begin{axis}[ axis lines = center, xmin=-3, xmax=3, ymin=-3, ymax=3, scale = 0.3, samples=100]
+                \addplot[blue, smooth, thick, unbounded coords = jump] {abs(x)};
+            \end{axis}
+        \end{tikzpicture}\\
+
+        \noindent
+        Reciprocal Function\\
+        $y = \frac{1}{x}$\\
+        $y = \frac{a}{k(x-d)}+c$\\\\
+        \begin{tikzpicture}
+            \begin{axis}[ axis lines = center, xmin=-3, xmax=3, ymin=-3, ymax=3, scale = 0.3, samples=100]
+                \addplot[blue, smooth, thick, unbounded coords = jump] {1/x};
+            \end{axis}
+        \end{tikzpicture}\\
+
+        \noindent
+        Exponential Function\\
+        $y = 2^{x}$\\
+        $y = a2^{k(x-d)}+c$\\\\
+        \begin{tikzpicture}
+            \begin{axis}[ axis lines = center, xmin=-3, xmax=3, ymin=-3, ymax=3, scale = 0.3, samples=100]
+                \addplot[blue, smooth, thick, unbounded coords = jump] {2^x};
+            \end{axis}
+        \end{tikzpicture}\\
+
+        \end{multicols}
+
+    \newpage
+    \noindent
+    Effects of Letters\\
+
+    \begin{multicols}{2}
+
+    \noindent
+    \textbf{a:}
+    \begin{verbatim}
+    0 < |a| < 1
+    \end{verbatim}
+    \noindent
+    Vertical compression by a factor of $|a|$\\
+    Multiply y values by $|a|$\\\\
+    \begin{verbatim}
+    |a| > 1
+    \end{verbatim}
+    \noindent
+    Vertical stretch by a factor of $|a|$\\
+    Multiply y values by $|a|$\\\\
+    \begin{verbatim}
+    a < 0
+    \end{verbatim}
+    \noindent
+    Reflection over the x-axis\\
+    Multiply y values by -1\\
+
+    \columnbreak
+    \noindent
+    \textbf{k:}
+    \begin{verbatim}
+    0 < |k| < 1
+    \end{verbatim}
+    \noindent
+    Horizontal stretch by a factor of $\frac{1}{|k|}$\\
+    Multiply x values by $\frac{1}{|k|}$\\\\
+    \begin{verbatim}
+    |k| > 1
+    \end{verbatim}
+    \noindent
+    Horizontal compression by $\frac{1}{|k|}$\\
+    Multiply x values by $\frac{1}{|k|}$\\\\
+    \begin{verbatim}
+    k<0
+    \end{verbatim}
+    \noindent
+    Reflection over the y-axis\\
+    Multiply x values by -1
+
+    \end{multicols}
+
+    \begin{multicols}{2}
+    \noindent \\\\
+    \textbf{c:}
+    \begin{verbatim}
+    c > 0
+    \end{verbatim}
+    \noindent
+    Shift up c units\\
+    Add c to y values\\\\
+    \begin{verbatim}
+    c < 0
+    \end{verbatim}
+    \noindent
+    Shift down c units\\
+    Add c to y values\\\\
+
+    \columnbreak
+    \noindent  \\\\
+    \textbf{d:}
+    \begin{verbatim}
+    d > 0
+    \end{verbatim}
+    \noindent
+    Shift right d units\\
+    Add d to x values\\\\
+    \begin{verbatim}
+    d < 0
+    \end{verbatim}
+    \noindent
+    Shift left d units\\
+    Add d to x values \\
+
+    \end{multicols}
+
+    \noindent
+    \newpage
+    Notes:\\
+    - k must be factored out in order to determine the value of d\\
+    - The order to complete transformations is:
+    \begin{verbatim}
+    1) Stretch/Compress
+    2) Reflect
+    3) Shift
+    \end{verbatim}
+
+%----------------------------------------------------------
+
+
+
+\end{document}
