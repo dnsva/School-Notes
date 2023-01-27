@@ -10,6 +10,10 @@
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
 
 
 \title{Intro to Functions}
@@ -26,10 +30,23 @@
 \newpage
 \section{Function Definitions}
 
+\textbf{Relation} - Any relationship (set of ordered pairs) \\
+\textbf{Function} - A relation that maps each input (x) to exactly one output (y)\\
+\textbf{Finite} - Countable (discrete)\\
+\textbf{Infinite} - Uncountable \\
+\textbf{Mapping Diagram} - A visual representation of inputs and outputs (finite only)\\
+\textbf{Vertical Line Test (VLT)} - A relation is not a function if you can draw a vertical line and cross the graph more than once. ($\because$ VLT fails/passes $\therefore$ this is/is not a function.)\\
 %----------------------------------------------------------
 
 \newpage
 \section{Function Notation}
+
+\textbf{$f(x)$}
+\begin{itemize}
+    \item used in place of y in equations
+    \item helpful for identifying equations and input used
+\end{itemize}
+
 
 %----------------------------------------------------------
 
@@ -122,10 +139,58 @@
 \newpage
 \section{Domain and Range}
 
+\textbf{Domain} - The set of all x values (input) \\
+\textbf{Range} - The set of all y values (output) \\\\
+\textbf{Symbols}
+\begin{itemize}
+    \item $\mathbb{R}$ - the set of real numbers
+    \item $\mathbb{Z}$ - the set of integers
+    \item $\epsilon$ - belongs to
+    \item $\mid$ - such that
+    \item $\eqslantless, <, \leqslant, >$
+\end{itemize}
+
+\noindent
+\\For finite sets there are no duplicates and the values are in order.\\\\
+
+\noindent
+\textbf{Domain \& Range From Equations - Common Restrictions}\\
+1. Cannot divide by zero\\
+2. Cannot square root negatives\\
+3. Vertex restrictions (use the graph)\\
+
 %----------------------------------------------------------
 
 \newpage
 \section{The Inverse Function}
+
+$f^{-1}(x)$
+\begin{itemize}
+    \item The inverse function is the "reverse" of the original function
+    \item $f(x)$ operates in a specific way and order, $f^{-1}(x)$ will do the opposite operation in the reverse order
+    \item Referred to as "inverse of f" or "f inverse"
+\end{itemize} 
+
+$(x,y) \epsilon f(x), (y,x) \epsilon f^{-1}(x)$\\
+
+\noindent
+Note:\\
+$f(f^{-1}(x)) = f^{-1}(f(x))$ = x\\
+$f(x)$ and $f^{-1}(x)$ "cancel" each other\\
+
+\noindent
+Steps to find the inverse:
+\begin{enumerate}
+    \item Given a list of points flip the coordinates\\
+        (x,y) turns to (y,x)
+    \item Given an equation in function notation\\
+        - convert "y=" to "let f(x) = y"\\
+        - switch x and y variables\\
+        - solve for y\\
+        - if the inverse expression is a function, convert back to $f^{-1}(x)$
+    \item Given a discrete graph flip all points and replot
+    \item Given a continuous graph choose select points to flip OR reflect graph in the line y = x
+\end{enumerate} 
 
 %----------------------------------------------------------
 
@@ -135,15 +200,13 @@
     \[ y = af(k(x-d))+c \]
 
     \noindent
-    Where:
-    \begin{itemize}
-        \item a and c affect the y-coordinate
-        \item k and d affect the x-coordinate
-    \end{itemize}
+    Where:\\
+    - a and c affect the y-coordinate\\
+    - k and d affect the x-coordinate
 
     \subsubsection*{Functions}
 
-        \begin{multicols}{2}
+        \begin{multicols}{3}
         \noindent
         Quadratic Function\\
         $y = x^{2}$\\
@@ -164,6 +227,7 @@
             \end{axis}
         \end{tikzpicture}\\
 
+        \columnbreak
         \noindent
         Cubic Function\\
         $y = x^{3}$\\
@@ -175,7 +239,7 @@
         \end{tikzpicture}\\
 
         \noindent
-        Absolute Value Function\\
+        Absolute Value Func\\
         $y = |x|$\\
         $y = a|k(x-d)|+c$\\\\
         \begin{tikzpicture}
@@ -184,6 +248,7 @@
             \end{axis}
         \end{tikzpicture}\\
 
+        \columnbreak
         \noindent
         Reciprocal Function\\
         $y = \frac{1}{x}$\\
@@ -195,7 +260,7 @@
         \end{tikzpicture}\\
 
         \noindent
-        Exponential Function\\
+        Exponential Func\\
         $y = 2^{x}$\\
         $y = a2^{k(x-d)}+c$\\\\
         \begin{tikzpicture}
@@ -206,51 +271,39 @@
 
         \end{multicols}
 
-    \newpage
+    %\newpage
     \noindent
-    Effects of Letters\\
+    \textbf{Effects of Letters}
 
     \begin{multicols}{2}
 
     \noindent
-    \textbf{a:}
-    \begin{verbatim}
-    0 < |a| < 1
-    \end{verbatim}
+    \textbf{a:} $ 0 < |a| < 1 $\\
     \noindent
-    Vertical compression by a factor of $|a|$\\
-    Multiply y values by $|a|$\\\\
-    \begin{verbatim}
-    |a| > 1
-    \end{verbatim}
+    Vert. compression by a factor of $|a|$\\
+    Multiply y values by $|a|$\\
+
     \noindent
+    $|a| > 1$\\
     Vertical stretch by a factor of $|a|$\\
-    Multiply y values by $|a|$\\\\
-    \begin{verbatim}
-    a < 0
-    \end{verbatim}
+    Multiply y values by $|a|$\\
+
     \noindent
+    $a < 0$\\
     Reflection over the x-axis\\
     Multiply y values by -1\\
 
     \columnbreak
     \noindent
-    \textbf{k:}
-    \begin{verbatim}
-    0 < |k| < 1
-    \end{verbatim}
+    \textbf{k:} $ 0 < |k| < 1 $\\
     \noindent
     Horizontal stretch by a factor of $\frac{1}{|k|}$\\
     Multiply x values by $\frac{1}{|k|}$\\\\
-    \begin{verbatim}
-    |k| > 1
-    \end{verbatim}
+    $|k| > 1$\\
     \noindent
     Horizontal compression by $\frac{1}{|k|}$\\
     Multiply x values by $\frac{1}{|k|}$\\\\
-    \begin{verbatim}
-    k<0
-    \end{verbatim}
+    $k<0$\\
     \noindent
     Reflection over the y-axis\\
     Multiply x values by -1
@@ -259,33 +312,25 @@
 
     \begin{multicols}{2}
     \noindent \\\\
-    \textbf{c:}
-    \begin{verbatim}
-    c > 0
-    \end{verbatim}
+    \textbf{c:} $ c > 0 $ \\
     \noindent
     Shift up c units\\
-    Add c to y values\\\\
-    \begin{verbatim}
-    c < 0
-    \end{verbatim}
+    Add c to y values\\
+
     \noindent
+    $c < 0$ \\
     Shift down c units\\
-    Add c to y values\\\\
+    Add c to y values\\
 
     \columnbreak
     \noindent  \\\\
-    \textbf{d:}
-    \begin{verbatim}
-    d > 0
-    \end{verbatim}
+    \textbf{d:} $d > 0$\\
     \noindent
     Shift right d units\\
-    Add d to x values\\\\
-    \begin{verbatim}
-    d < 0
-    \end{verbatim}
+    Add d to x values\\
+
     \noindent
+    $d < 0$\\
     Shift left d units\\
     Add d to x values \\
 
@@ -304,6 +349,19 @@
 
 %----------------------------------------------------------
 
+\newpage
+\section*{Piecewise Functions}
 
+\textbf{Piecewise} - A \textbf{funciton} made up of two or more functions on given intervals.\\
+\textbf{Notation Examle}\\
+\[ \begin{cases} 
+    function & restrictions \\
+    x & 0 < x\leq 100 \\
+    1 & 100 < x 
+ \end{cases}
+\]
+
+
+%----------------------------------------------------------
 
 \end{document}
