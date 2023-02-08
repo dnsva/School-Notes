@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.16)  24 JAN 2023 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.16)  30 JAN 2023 10:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -179,22 +179,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
@@ -203,123 +188,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
- []
-
-<./images//electroscope.png, id=16, 195.73125pt x 247.92625pt>
-File: ./images//electroscope.png Graphic file (type png)
-<use ./images//electroscope.png>
-Package pdftex.def Info: ./images//electroscope.png  used on input line 54.
-(pdftex.def)             Requested size: 97.86537pt x 123.96281pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-
- []
-
-<./images//pithball electroscope.png, id=17, 275.52937pt x 275.52937pt>
-File: ./images//pithball electroscope.png Graphic file (type png)
-<use ./images//pithball electroscope.png>
-Package pdftex.def Info: ./images//pithball electroscope.png  used on input line 59.
-(pdftex.def)             Requested size: 82.65944pt x 82.65944pt.
-
-Overfull \hbox (1.86153pt too wide) in paragraph at lines 68--69
+Overfull \hbox (1.86153pt too wide) in paragraph at lines 50--51
 []\OT1/cmr/m/n/10 The strength of the elec-tric force in-creases with in-creas-ing elec-tri-cal charges
  []
 
-[3 <./images//electroscope.png> <./images//pithball electroscope.png>]
-<./images//metal leaf electroscope.png, id=23, 417.56pt x 168.63pt>
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+<./images//pithball electroscope.png, id=16, 275.52937pt x 275.52937pt>
+File: ./images//pithball electroscope.png Graphic file (type png)
+<use ./images//pithball electroscope.png>
+Package pdftex.def Info: ./images//pithball electroscope.png  used on input line 68.
+(pdftex.def)             Requested size: 82.65944pt x 82.65944pt.
+<./images//electroscope.png, id=18, 195.73125pt x 247.92625pt>
+File: ./images//electroscope.png Graphic file (type png)
+<use ./images//electroscope.png>
+Package pdftex.def Info: ./images//electroscope.png  used on input line 76.
+(pdftex.def)             Requested size: 58.71982pt x 74.37845pt.
+<./images//metal leaf electroscope.png, id=19, 417.56pt x 168.63pt>
 File: ./images//metal leaf electroscope.png Graphic file (type png)
 <use ./images//metal leaf electroscope.png>
-Package pdftex.def Info: ./images//metal leaf electroscope.png  used on input line 84.
+Package pdftex.def Info: ./images//metal leaf electroscope.png  used on input line 79.
 (pdftex.def)             Requested size: 250.53792pt x 101.17877pt.
- [4 <./images//metal leaf electroscope.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+[3 <./images//pithball electroscope.png> <./images//electroscope.png>] [4 <./images//metal leaf electroscope.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--108
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
  []
 
 <./images//electrostatic series.jpg, id=28, 394.47375pt x 723.70375pt>
 File: ./images//electrostatic series.jpg Graphic file (type jpg)
 <use ./images//electrostatic series.jpg>
-Package pdftex.def Info: ./images//electrostatic series.jpg  used on input line 114.
+Package pdftex.def Info: ./images//electrostatic series.jpg  used on input line 106.
 (pdftex.def)             Requested size: 51.28339pt x 94.08478pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--125
+Underfull \hbox (badness 10000) in paragraph at lines 114--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--125
+Underfull \hbox (badness 10000) in paragraph at lines 114--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
 
 [5 <./images//electrostatic series.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 127--129
+Underfull \hbox (badness 10000) in paragraph at lines 123--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--129
+Underfull \hbox (badness 10000) in paragraph at lines 123--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--134
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--134
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--134
+Underfull \hbox (badness 10000) in paragraph at lines 123--126
 
  []
 
 <./images//electrostatic precipitator.png, id=32, 249.93375pt x 159.59625pt>
 File: ./images//electrostatic precipitator.png Graphic file (type png)
 <use ./images//electrostatic precipitator.png>
-Package pdftex.def Info: ./images//electrostatic precipitator.png  used on input line 141.
+Package pdftex.def Info: ./images//electrostatic precipitator.png  used on input line 133.
 (pdftex.def)             Requested size: 174.95242pt x 111.7166pt.
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 153--155
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
-[7 <./images//electrostatic precipitator.png>] [8] (./physics.aux) ) 
+[6 <./images//electrostatic precipitator.png>] [7] [8] (./physics.aux) ) 
 Here is how much of TeX's memory you used:
  1873 strings out of 478268
  31051 string characters out of 5846347
- 328517 words of memory out of 5000000
+ 329517 words of memory out of 5000000
  20093 multiletter control sequences out of 15000+600000
  474195 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,62p,536b,243s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,7n,62p,536b,239s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on physics.pdf (8 pages, 360676 bytes).
+Output written on physics.pdf (8 pages, 359355 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream

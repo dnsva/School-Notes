@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1674589352 "/Users/anna/Desktop/School Notes/Science 9/Physics/physics.tex" "physics.pdf" "physics" 1674589352
-  "/Users/anna/Desktop/School Notes/Science 9/Physics/physics.tex" 1674589351 11839 2adfe3057feaeeb2b6d2be2269cc6e63 ""
+["pdflatex"] 1675090808 "/Users/anna/Desktop/School Notes/Science 9/Physics/physics.tex" "physics.pdf" "physics" 1675090809
+  "/Users/anna/Desktop/School Notes/Science 9/Physics/physics.tex" 1675090808 10765 ceb230ca678668de439a5ac8ace1b260 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -48,9 +48,9 @@
   "images//electrostatic series.jpg" 1674338665 61674 4b32f7ecfca056a07f37330f9f13c5a6 ""
   "images//metal leaf electroscope.png" 1674331677 81116 f359045fb8d120cdb37137c230408fc6 ""
   "images//pithball electroscope.png" 1674331067 38753 61ef0fe0344bfd8bf9a8386cafddc309 ""
-  "physics.aux" 1674589352 1671 127fbe94dd955213d6d80f52cdc61307 "pdflatex"
-  "physics.tex" 1674589351 11839 2adfe3057feaeeb2b6d2be2269cc6e63 ""
-  "physics.toc" 1674589352 1106 0fe7b929e6145f620eb8427e1df4b782 "pdflatex"
+  "physics.aux" 1675090809 1525 7ad49639234261c816a417c321094986 "pdflatex"
+  "physics.tex" 1675090808 10765 ceb230ca678668de439a5ac8ace1b260 ""
+  "physics.toc" 1675090809 1001 66829ce61a8da69e4a6145726ba27a7b "pdflatex"
   (generated)
   "physics.aux"
   "physics.log"

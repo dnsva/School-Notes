@@ -1,0 +1,66 @@
+
+
+\documentclass{article}
+
+\begin{document}
+
+\section{Random Numbers}
+
+\subsection{Syntax (3 parts)}
+
+\begin{verbatim}
+#include <ctime>
+#include <cstdlib>
+srand(time(0));
+\end{verbatim}
+
+\subsection{Using the rand() function}
+Between two numbers - [min:max]
+
+\begin{verbatim}
+int randNum = rand()%(max-min + 1) + min;
+\end{verbatim}
+
+\section{For Loops}
+
+\subsection{Format}
+\begin{verbatim}
+for(initialization; test; update){ //header
+     statement(s) //body
+}
+\end{verbatim}
+
+\section{Functions}
+
+Built in functions:
+\begin{verbatim}
+pow(), fabs(), floor(), ceil(), sqrt(), ...
+\end{verbatim}
+
+\noindent
+Modular Programming - porting from program to program\\
+
+\subsection{The 3 Parts}
+1) Function Declaration - (Prototype) - Identifies function name and requirements (before main())
+\begin{verbatim}
+     int add(int a, int b);
+\end{verbatim}
+2) Function Definition - Code for the specific task (in this course, definitions should be after main())
+\begin{verbatim}
+     int add(int a, int b){
+          return a + b;
+     }
+\end{verbatim}
+3) Function Call - Statement that directs control of the program to that function
+\begin{verbatim}
+     int main(){
+          int sum = add(1, 5);
+    	  cout<<"The sum is"<<sum<<"\n";
+     }
+\end{verbatim}
+
+\subsection{Global vs Local Variables}
+Global variables are declared outside all functions and may be accessed from anywhere whereas local variables are declared within its own block and may be accessed only within that block.\\
+
+
+\end{document}
