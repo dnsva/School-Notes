@@ -1,0 +1,117 @@
+
+
+\documentclass{article}
+
+\usepackage{multicol}
+\setlength{\columnsep}{1.2cm}
+\usepackage{pgfplots}
+\pgfplotsset{compat = newest}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+
+\title{Exponential Functions}
+\author{Anna Denisova}
+\date{2023}
+
+\begin{document}
+
+\maketitle
+
+
+%----------------------------------------------------------
+
+\newpage
+\section{Exponent Laws}
+    
+\begin{itemize}
+    \begin{multicols}{3}
+    \item $x^0 = 1$
+    \item $x^1 = x$
+    \item $x^ax^b = x^{a+b}$
+    \item $\left(\frac{x}{y}\right)^a = \frac{x^a}{y^a}$
+    \item $x^{-1} = \frac{1}{x}$
+    \item $x^{-a} = \frac{1}{x^a}$
+    \item $(x^a)^b = x^{ab}$
+    \item $(ax^b)^c = a^cx^{bc}$
+    \item $\left(\frac{x}{y}\right)^{-1} = \frac{y}{x}$
+    \item $\left(\frac{x}{y}\right)^{-a} = \frac{y^a}{x^a}$
+    \end{multicols}
+\end{itemize}
+
+
+%----------------------------------------------------------
+
+%\newpage
+\section{Radical Powerlaws}
+
+\begin{itemize}
+    \item $x^{\frac{1}{a}} = \sqrt[a]{x}$
+    \item $x^{\frac{b}{a}} = \sqrt[a]{x^b}$
+    \item $x^{-\frac{b}{a}} = \frac{1}{\sqrt[a]{x^b}}$
+\end{itemize}
+
+\subsection*{Steps to Solve:}
+\begin{enumerate}
+    \item Convert all radicals to fractional exponents
+    \item Use powerlaws to simplify
+    \item Convert back to root form
+\end{enumerate}
+
+%----------------------------------------------------------
+
+%\newpage
+\section{Rational Exponent Equations}
+When solving rational exponenet equations, isolate the variable first then flip the exponent \\
+
+In general:
+\begin{align*}
+    a &= b + cx^{\frac{e}{f}}\\
+    \frac{a-b}{c} &= x^{\frac{e}{f}}\\
+    \left(\frac{a-b}{c}\right)^{\frac{f}{e}} &= \left(x^{\frac{e}{f}}\right)^{\frac{f}{e}}\\
+    \left(\frac{a-b}{c}\right)^{\frac{f}{e}} &= x
+\end{align*}
+
+%----------------------------------------------------------
+%\newpage
+\section{Exponential Equations}
+When solving exponential equations:\\
+\begin{enumerate}
+    \item Get a single term on each side
+    \item Make the bases match
+    \item "Drop" the bases, set exponents equal
+\end{enumerate}
+
+\subsection*{Types can include:}
+\begin{itemize}
+    \item normal easy types
+    \item divide first
+    \item apples - $x^{a+b} = x^ax^b$
+    \item hidden quadratic (trinomial) -  $x^{ab} = (x^a)^b$
+\end{itemize}
+
+
+%----------------------------------------------------------
+
+%\newpage
+\section{Properties of Exponential Functions}
+
+\textbf{Exponential Function} - A function in the form $y=b^x$ where b can change your key points. The greater the b, the steeper. Any values make the function go through (0, 1) always. \\\\
+\noindent
+\textbf{Transformations} - $y = ab^{k(x-d)}+c$
+%----------------------------------------------------------
+
+%\newpage
+%----------------------------------------------------------
+%\newpage
+
+
+%----------------------------------------------------------
+
+\end{document}
