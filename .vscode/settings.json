@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.tex": "latex",
+        "bitset": "cpp",
+        "cstdlib": "cpp"
+    }
+}

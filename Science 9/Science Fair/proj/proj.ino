@@ -19,21 +19,19 @@ void checkPosition() {  encoder.tick(); } // just call tick() to check the state
 
 int encoder_pos = 0; //encoder position state
 
-void setup() {
+void setup(){ //setup function for the board
 
   Keyboard.begin(); //initialize keyboard library 
   Serial.begin(115200);
-  delay(100);  // RP2040 delay is not a bad idea
-
-  Serial.println("Anna's Macropad with RP2040");
+  delay(500);  //RP2040 delay is not a bad idea (ms)
 
   // start pixels
   pixels.begin();
   pixels.setBrightness(255);
-  pixels.show(); // Initialize all pixels to 'off'
+  pixels.show(); //Initialize all pixels to 'off'
 
   // Start OLED
-  display.begin(0, true); // we dont use the i2c address but we will reset!
+  display.begin(0, true); //we dont use the i2c address but still reset
   display.display();
   
   // set all mechanical keys to inputs
@@ -51,31 +49,25 @@ void setup() {
   display.setTextSize(1);
   display.setTextWrap(false);
   display.setTextColor(SH110X_WHITE, SH110X_BLACK); // white text, black background
-  //display.setTextColor(0x2C4A, SH110X_BLACK);
 
   // Enable speaker
   pinMode(PIN_SPEAKER_ENABLE, OUTPUT);
   digitalWrite(PIN_SPEAKER_ENABLE, HIGH);
-  // Play some tones
+  // For tones
   pinMode(PIN_SPEAKER, OUTPUT);
   digitalWrite(PIN_SPEAKER, LOW);
-  tone(PIN_SPEAKER, 988, 100);  // tone1 - B5
-  delay(100);
-  tone(PIN_SPEAKER, 1319, 200); // tone2 - E6
-  delay(200);
+
 }
 
 uint8_t j = 0;
 bool i2c_found[128] = {false};
     
-
 void loop() {
   display.clearDisplay();
   display.setCursor(0,0);
-  //display.println("* Adafruit Macropad *");
-  display.println(" *** Sound Maker *** ");
+  display.println(" *** Sound Maker *** "); //title
 
-  encoder.tick();          // check the encoder
+  encoder.tick(); // check the encoder
   int newPos = encoder.getPosition();
   if (encoder_pos != newPos) {
     Serial.print("Encoder:");
@@ -132,26 +124,19 @@ void loop() {
     pixels.setBrightness(80);
   }
 
-  for(int i=0; i<12; i++) {
-
+  for(int i=0; i<12; i++) { //check for if button pressed & change color
     if(i == 9 || i == 10){ //newline or scale (special)
       pixels.setPixelColor(i, 255, 0, 0);
     }else{
       pixels.setPixelColor(i, (encoder_pos*100)%255, 100, 250);
     }
-    //pixels.setPixelColor(i, Wheel(((i * 256 / pixels.numPixels()) + j) & 255));
-
   }
   
   for (int i=1; i<=12; i++) {
-    if (!digitalRead(i)) { // switch pressed!
+    if (!digitalRead(i)) { //switch pressed
       Serial.print("Switch "); Serial.println(i);
-      pixels.setPixelColor(i-1, 0xFFFFFF);  // make white
-      // move the text into a 3x4 grid
-      display.setCursor(((i-1) % 3)*48, 32 + ((i-1)/3)*8);
-      
-      
-
+      pixels.setPixelColor(i-1, 0xFFFFFF);  //make white
+      display.setCursor(((i-1) % 3)*48, 32 + ((i-1)/3)*8); //move the text into a 3x4 grid
     }
   }
 
@@ -159,104 +144,91 @@ void loop() {
 
   //tone(pin, frequency, duration);
 
-
-/*Take these values and multiply by the octave number + 1 */
-//double frequencies[8] = {16.35, 18.35, 20.60, 21.83, 24.50, 27.50, 30.87}; //for octave 0
-                        //C.    D.     E.     F.     G.     A.     B   
+  /*Take these values and multiply by the octave number + 1 */
+  //double frequencies[8] = {16.35, 18.35, 20.60, 21.83, 24.50, 27.50, 30.87}; //for octave 0
+                            //C.    D.     E.     F.     G.     A.     B   
 
   //----------------------------------------------------
 
   String encoder_pos_str = String(encoder_pos);
 
-  if(!digitalRead(1)){ //switch pressed C
+  if(!digitalRead(1)){ //switch pressed - C
     display.print("C");
     Keyboard.print("C");
     display.print(encoder_pos);
     Keyboard.print(encoder_pos_str);
     Keyboard.print(" "); 
     tone(PIN_SPEAKER, 16.35*(encoder_pos+6), 300); //C
-    
   }
 
-  if(!digitalRead(2)){ //switch pressed D
+  if(!digitalRead(2)){ //switch pressed - D
     display.print("D");
     Keyboard.print("D");
     display.print(encoder_pos);
     Keyboard.print(encoder_pos_str);
     Keyboard.print(" "); 
-    tone(PIN_SPEAKER, 18.35*(encoder_pos+6), 300);  //D
-    
+    tone(PIN_SPEAKER, 18.35*(encoder_pos+6), 300); //D
   }
 
-  if(!digitalRead(3)){ //switch pressed E
+  if(!digitalRead(3)){ //switch pressed - E
     display.print("E");
     Keyboard.print("E");
     display.print(encoder_pos);
     Keyboard.print(encoder_pos_str);
     Keyboard.print(" "); 
-    tone(PIN_SPEAKER, 20.60*(encoder_pos+6), 300);  //E
-   
+    tone(PIN_SPEAKER, 20.60*(encoder_pos+6), 300); //E
   }
 
-  if(!digitalRead(4)){ //switch pressed F
+  if(!digitalRead(4)){ //switch pressed - F
     display.print("F");
     Keyboard.print("F");
     display.print(encoder_pos);
     Keyboard.print(encoder_pos_str);
     Keyboard.print(" "); 
-    tone(PIN_SPEAKER,  21.83*(encoder_pos+6), 300);  //F
-   
+    tone(PIN_SPEAKER,  21.83*(encoder_pos+6), 300); //F
   }
 
-  if(!digitalRead(5)){ //switch pressed G
+  if(!digitalRead(5)){ //switch pressed - G
     display.print("G");
     Keyboard.print("G");
     display.print(encoder_pos);
     Keyboard.print(encoder_pos_str);
     Keyboard.print(" "); 
     tone(PIN_SPEAKER, 24.50*(encoder_pos+6), 300);  //G
-    
   }
 
-  if(!digitalRead(6)){ //switch pressed A
+  if(!digitalRead(6)){ //switch pressed - A
     display.print("A");
     Keyboard.print("A");
     display.print(encoder_pos);
     Keyboard.print(encoder_pos_str);
     Keyboard.print(" "); 
     tone(PIN_SPEAKER, 27.50*(encoder_pos+6), 300);  //A
-    
   }
 
-  if(!digitalRead(7)){ //switch pressed B
+  if(!digitalRead(7)){ //switch pressed - B
     display.print("B");
     Keyboard.print("B");
     display.print(encoder_pos);
     Keyboard.print(encoder_pos_str);
     Keyboard.print(" "); 
     tone(PIN_SPEAKER, 30.87*(encoder_pos+6), 300);  //B
-    
   }
 
   if(!digitalRead(8)){ //switch pressed 
-    //pixels.setPixelColor(7, 0xFFFFFF);  // make white
-    //tone(PIN_SPEAKER, 988, 500);  // tone1 - B5
     
   }
 
   if(!digitalRead(9)){ //switch pressed
-   // pixels.setPixelColor(8, 0xFFFFFF);  // make white
-    //tone(PIN_SPEAKER, 988, 500);  // tone1 - B5
-    
+  
   }
 
-  if(!digitalRead(10)){ //switch pressed NEWLINE
+  if(!digitalRead(10)){ //switch pressed - NEWLINE
     display.print("NL");
     Keyboard.print("\n");
-    
   }
 
-  if(!digitalRead(11)){ //switch pressed ALL AT ONCE
+  if(!digitalRead(11)){ //switch pressed - PLAY ALL NOTES
 
     tone(PIN_SPEAKER, 16.35*(encoder_pos+6), 200);  //C
     delay(200);
@@ -274,54 +246,43 @@ void loop() {
     delay(200);
 
     display.print("SCALE");
-      Keyboard.print("C");
-      Keyboard.print(encoder_pos_str);
-      Keyboard.print(" "); 
-      Keyboard.print("D");
-      Keyboard.print(encoder_pos_str);
-      Keyboard.print(" ");
-      Keyboard.print("E");
-      Keyboard.print(encoder_pos_str);
-      Keyboard.print(" ");
-      Keyboard.print("F");
-      Keyboard.print(encoder_pos_str);
-      Keyboard.print(" ");
-      Keyboard.print("G");
-      Keyboard.print(encoder_pos_str);
-      Keyboard.print(" ");
-      Keyboard.print("A");
-      Keyboard.print(encoder_pos_str);
-      Keyboard.print(" ");
-      Keyboard.print("B");
-      Keyboard.print(encoder_pos_str);
-      Keyboard.print(" ");
-
-
-    
+    Keyboard.print("C");
+    Keyboard.print(encoder_pos_str);
+    Keyboard.print(" "); 
+    Keyboard.print("D");
+    Keyboard.print(encoder_pos_str);
+    Keyboard.print(" ");
+    Keyboard.print("E");
+    Keyboard.print(encoder_pos_str);
+    Keyboard.print(" ");
+    Keyboard.print("F");
+    Keyboard.print(encoder_pos_str);
+    Keyboard.print(" ");
+    Keyboard.print("G");
+    Keyboard.print(encoder_pos_str);
+    Keyboard.print(" ");
+    Keyboard.print("A");
+    Keyboard.print(encoder_pos_str);
+    Keyboard.print(" ");
+    Keyboard.print("B");
+    Keyboard.print(encoder_pos_str);
+    Keyboard.print(" ");
   }
 
-
   if(!digitalRead(12)){ //switch pressed
-   // pixels.setPixelColor(11, 0xFFFFFF);  // make white
-   // tone(PIN_SPEAKER, 988, 100);  // tone1 - B5
+   
   }
 
   //----------------------------------------------------
 
-  // show neopixels, incredment swirl
-  pixels.show();
-  j++;
+  pixels.show(); //show neopixels
+  j++; //increment "swirl"
 
-  // display oled
-  display.display();
+  display.display(); //display oled
 
-  delay(500); //milliseconds 
 }
 
-
-
-
-
+/*
 // Input a value 0 to 255 to get a color value.
 // The colours are a transition r - g - b - back to r.
 uint32_t Wheel(byte WheelPos) {
@@ -335,3 +296,4 @@ uint32_t Wheel(byte WheelPos) {
    return pixels.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
   }
 }
+*/
