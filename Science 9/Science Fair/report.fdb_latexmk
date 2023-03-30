@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1679492900 "/Users/anna/Documents/main/School Notes/Science 9/Science Fair/report.tex" "report.pdf" "report" 1679492900
-  "/Users/anna/Documents/main/School Notes/Science 9/Science Fair/report.tex" 1679492899 11025 d3a146b1293b28afd3bb7b3c25767e08 ""
+["pdflatex"] 1680144734 "/Users/anna/Documents/main/School Notes/Science 9/Science Fair/report.tex" "report.pdf" "report" 1680144735
+  "/Users/anna/Documents/main/School Notes/Science 9/Science Fair/report.tex" 1680144733 12631 f08675be674ee606d1c75bd76e64ad49 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -48,6 +48,7 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/base/omlcmr.fd" 1622581934 2470 c2c019f70756763a210c8c4439f55d8a ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/base/size10.clo" 1636758526 8448 96f18c76bf608a36ee6fbf021ac1dd32 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def" 1601931164 19103 48d29b6e2a64cb717117ef65f107b404 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty" 1622581934 18399 7e40f80366dffb22c0e7b70517db5cb4 ""
@@ -74,10 +75,11 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1673926725 2826436 5b45bf62b290fd103cd49ade3b8acca6 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "report.aux" 1679492900 1912 d393070534b6dd944204565a6cb26b03 "pdflatex"
-  "report.out" 1679492900 1273 04a63fbb42f2e36e82eca9910801b7b4 "pdflatex"
-  "report.tex" 1679492899 11025 d3a146b1293b28afd3bb7b3c25767e08 ""
-  "report.toc" 1679492900 775 90bd9427ca201cf8b3767bedc5747c0b "pdflatex"
+  "images/CODE.png" 1680132880 853593 158ade67403d695f9c9776f8dd21dc10 ""
+  "report.aux" 1680144735 2025 d1605ba2f808f8c3a93e510df5a8964e "pdflatex"
+  "report.out" 1680144735 1391 3ac87fc9053dfd44019b7256e3b0983a "pdflatex"
+  "report.tex" 1680144733 12631 f08675be674ee606d1c75bd76e64ad49 ""
+  "report.toc" 1680144735 847 5dcf8c1ece80739962bd2a7a563582c7 "pdflatex"
   (generated)
   "report.aux"
   "report.log"
