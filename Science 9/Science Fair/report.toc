@@ -5,8 +5,9 @@
 \contentsline {section}{\numberline {5}Variables}{2}{section.5}%
 \contentsline {section}{\numberline {6}Materials}{3}{section.6}%
 \contentsline {section}{\numberline {7}Procedure}{3}{section.7}%
-\contentsline {section}{\numberline {8}Experiment - The build}{5}{section.8}%
-\contentsline {section}{\numberline {9}Results \& Analysis}{6}{section.9}%
-\contentsline {section}{\numberline {10}Conclusion \& Application}{7}{section.10}%
-\contentsline {section}{\numberline {11}Libraries Used}{8}{section.11}%
-\contentsline {section}{\numberline {12}Bibliography}{8}{section.12}%
+\contentsline {section}{\numberline {8}Safety Precautions}{5}{section.8}%
+\contentsline {section}{\numberline {9}Experiment - The build}{5}{section.9}%
+\contentsline {section}{\numberline {10}Results \& Analysis}{6}{section.10}%
+\contentsline {section}{\numberline {11}Conclusion \& Application}{7}{section.11}%
+\contentsline {section}{\numberline {12}Libraries Used}{8}{section.12}%
+\contentsline {section}{\numberline {13}Bibliography}{8}{section.13}%
