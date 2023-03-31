@@ -2,9 +2,9 @@
 \contentsline {section}{\numberline {2}Introduction \& Objective}{2}{section.2}%
 \contentsline {section}{\numberline {3}Purpose}{2}{section.3}%
 \contentsline {section}{\numberline {4}Hypothesis}{2}{section.4}%
-\contentsline {section}{\numberline {5}Variables}{2}{section.5}%
+\contentsline {section}{\numberline {5}Variables}{3}{section.5}%
 \contentsline {section}{\numberline {6}Materials}{3}{section.6}%
-\contentsline {section}{\numberline {7}Procedure}{3}{section.7}%
+\contentsline {section}{\numberline {7}Procedure}{4}{section.7}%
 \contentsline {section}{\numberline {8}Safety Precautions}{5}{section.8}%
 \contentsline {section}{\numberline {9}Experiment - The build}{5}{section.9}%
 \contentsline {section}{\numberline {10}Results \& Analysis}{6}{section.10}%
